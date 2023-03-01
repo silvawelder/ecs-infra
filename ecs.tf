@@ -1,5 +1,5 @@
 resource "aws_ecs_cluster" "my_cluster" {
-  name = "${var.project-prefix}-ecs-${format("%s", terraform.workspace)}" # Nome do cluster ex: fc-hdi-ecommerce-api-ecs-dev
+  name = "${var.project-prefix}-ecs-${format("%s", terraform.workspace)}" # Nome do cluster ex: my-api-ecommerce-api-ecs-dev
 }
 
 
@@ -54,7 +54,7 @@ resource "aws_ecs_task_definition" "my_first_task" {
 }
 
 resource "aws_ecs_service" "my_first_service" {
-  name            = "${var.project-prefix}-svc-${format("%s", terraform.workspace)}"    # Nome do primeiro service  ex: fc-hdi-ecommerce-api-ecs-svc-dev
+  name            = "${var.project-prefix}-svc-${format("%s", terraform.workspace)}"    # Nome do primeiro service  ex: my-api-ecommerce-ecs-svc-dev
   cluster         = "${aws_ecs_cluster.my_cluster.id}" # Referencing our created Cluster
   task_definition = "${aws_ecs_task_definition.my_first_task.arn}" # Referencing the task our service will spin up
   launch_type     = "FARGATE"
