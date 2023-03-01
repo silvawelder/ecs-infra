@@ -4,7 +4,7 @@ resource "aws_ecs_cluster" "my_cluster" {
 
 
 resource "aws_ecs_task_definition" "my_first_task" {
-  family                   = "project-name-ecs-task-env"  # Nome da task ex: fc-hdi-ecommerce-api-ecs-task-dev
+  family                   = "project-name-ecs-task-env"  # Nome da task ex: my-api-ecommerce-ecs-task-dev
   container_definitions    = <<DEFINITION
   [
     {
