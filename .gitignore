@@ -30,3 +30,4 @@ plan*
 
 #others
 .terraform.lock.hcl
+versions.tf

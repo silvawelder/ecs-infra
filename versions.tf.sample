@@ -1,0 +1,9 @@
+terraform{
+  backend "s3" {
+    bucket  = "your-bucket-name-to-tfstates"
+    key     = "ecs-infra/terraform.tfstate"
+    region  = "your-region" #"us-east-1"
+    profile = "your-profile-credential-name"
+
+  }
+}

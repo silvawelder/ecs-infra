@@ -1,0 +1,38 @@
+#AWS variables
+region = "us-east-1"
+
+#used to authenticate on aws 
+aws-credential-profile = "insert-your-profile"
+
+#IAM
+# If you created this rule set here the anr 
+arn-ecsTaskExecutionRole = "arn:aws:iam::<accountID>:role/ecsTaskExecutionRole"
+
+#project prefix/name
+
+project-prefix = "project-name"
+
+#Network variables
+
+vpc-id = "vpc-468723(...)hq4566"
+
+subnets-ids-az-a = {
+    dev = "subnet-006x89x(...)e20"
+    qa  = "subnet-000a(...)b50653e"
+    hml = "subnet-0a23425(...)6d53a81"
+    prod = "subnet-0004a3d9(...)5b4a87"
+}
+
+subnets-ids-az-b = {
+    dev = "subnet-0004a3d9(...)5b4a87"
+    qa  = "subnet-0004a3d9(...)5b4a87"
+    hml = "subnet-0004a3d9(...)5b4a87"
+    prod = "subnet-0004a3d9(...)5b4a87"
+}
+
+subnets-ids-az-c = {
+    dev = "subnet-0004a3d9(...)5b4a87"
+    qa  = "subnet-0004a3d9(...)5b4a87"
+    hml = "subnet-0004a3d9(...)5b4a87"
+    prod = "subnet-0004a3d9(...)5b4a87"
+}
